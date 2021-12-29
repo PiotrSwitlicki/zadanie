@@ -3,8 +3,10 @@ Wymagania:
 - aplikacja stworzona w Laravel 8
 - php 7.4+, najlepiej 8
 - mariadb/mysql
+
 Mile widziane:
 - Użycie VUE 3/2 do wyświetlania danych. Ewentualnie można użyć Reacta.
+
 - Przesyłanie danych z backendu do “propsów”, poprzez Inertię.
 - Użycie np. spinnera przy wczytywaniu danych asynchronicznych, bądź jakiejkolwiek
 informacji o ładowaniu danych.
