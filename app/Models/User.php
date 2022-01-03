@@ -42,8 +42,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function wallet()
+    public function event()
     {
-        return $this->hasMany(Wallet::class);
+        return $this->belongsTo(Event::class);
     }
+
+
 }
