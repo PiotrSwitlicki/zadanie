@@ -27,21 +27,7 @@ class HomeController extends Controller
     {
         $id = auth()->user()->id;  
         $user = User::with('wallet')->find($id);  
-        //dd($user);   
-        $wallet = $user->wallet;
-        //dd($wallet->ballance);
-        
-
-        $api_url = 'http://api.nbp.pl/api/exchangerates/rates/A/USD/';
-
-        // Read JSON file
-        $json_data = file_get_contents($api_url);
-
-        // Decode JSON data into PHP array
-        $response_data = json_decode($json_data);
-
-    //    dd($response_data);
-
+        $wallet = $user->wallet; 
         return view('home', ['user' => $user, 'wallet' => $wallet]);
     }
 }
